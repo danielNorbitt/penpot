@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Deps: com.sun.mail/jakarta.mail:2.0.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sun/mail/jakarta.mail/2.0.1/jakarta.mail-2.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

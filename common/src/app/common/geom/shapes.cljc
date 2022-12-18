@@ -53,10 +53,18 @@
   [shape]
   (or (:x shape) (:x (:selrect shape)))) ; Paths don't have :x attribute
 
+(defn right-bound
+  [shape]
+  (+ (left-bound shape) (:wight shape)))
+
 (defn top-bound
   "Returns the lowest y coord of the shape BEFORE applying transformations."
   [shape]
   (or (:y shape) (:y (:selrect shape)))) ; Paths don't have :y attribute
+
+(defn bottom-bound
+  [shape]
+  (+ (top-bound shape) (:height shape)))
 
 (defn fully-contained?
   "Checks if one rect is fully inside the other"
@@ -108,6 +116,20 @@
 
 (defn distance-shapes [shape other]
   (distance-selrect (:selrect shape) (:selrect other)))
+
+(defn vertical-distance-of-bounds [shape selector]
+  (if (< (:y shape) (:y selector))
+    (- (top-bound shape) (bottom-bound selector))
+    (- (top-bound selector) (bottom-bound shape))))
+
+(defn horizontal-distance-of-bounds [shape selector]
+  (if (< (:x shape) (:x selector))
+    (- (left-bound shape) (right-bound selector))
+    (- (left-bound selector) (right-bound shape))))
+
+(defn distance-of-bounds [shape selected]
+  {:dist-x (abs (vertical-distance-of-bounds shape selected))
+   :dist-y (abs (horizontal-distance-of-bounds shape selected))})
 
 (defn close-attrs?
   "Compares two shapes attributes to see if they are equal or almost

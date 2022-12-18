@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DepsProjectsManager">
+    <option name="projectFiles">
+      <set>
+        <option value="file://$PROJECT_DIR$/backend/deps.edn" />
+        <option value="file://$PROJECT_DIR$/common/deps.edn" />
+        <option value="file://$PROJECT_DIR$/exporter/deps.edn" />
+        <option value="file://$PROJECT_DIR$/frontend/deps.edn" />
+      </set>
+    </option>
+  </component>
+</project>

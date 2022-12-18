@@ -101,6 +101,8 @@ services:
     command: postgres -c config_file=/etc/postgresql.conf
     restart: always
     stop_signal: SIGINT
+    ports:
+      - "5432:5432"
     environment:
       - POSTGRES_INITDB_ARGS=--data-checksums
       - POSTGRES_DB=penpot

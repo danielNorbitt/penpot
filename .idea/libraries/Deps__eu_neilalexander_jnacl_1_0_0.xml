@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Deps: eu.neilalexander/jnacl:1.0.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/eu/neilalexander/jnacl/1.0.0/jnacl-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

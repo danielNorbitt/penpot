@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Deps: org.clojars.pntblnk/clj-ldap:0.0.17">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/clojars/pntblnk/clj-ldap/0.0.17/clj-ldap-0.0.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

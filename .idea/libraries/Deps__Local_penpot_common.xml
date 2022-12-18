@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Deps: Local penpot/common">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/common/target/classes/" />
+      <root url="file://$PROJECT_DIR$/common/src/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
